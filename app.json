@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index2/index2",
+    "pages/about/about",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00BFFF",
+    "navigationBarTitleText": "Mini小时钟",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index2/index2",
+        "text": "首页",
+        "iconPath":"imgs/geren-copy.png",
+        "selectedIconPath":"imgs/geren.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "about",
+        "iconPath": "imgs/lianxiwomen-copy.png",
+        "selectedIconPath": "imgs/lianxiwomen.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "imgs/shouye-copy.png",
+        "selectedIconPath": "imgs/shouye.png"
+      }
+    ]
+  }
+}

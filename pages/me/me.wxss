@@ -1,0 +1,13 @@
+/* pages/me/me.wxss */
+text{
+  display: inline-block;
+  padding-left:140rpx;
+}
+button,input{
+  padding-left:.5em;
+  width:70%;
+  margin: 40rpx auto;
+  height:80rpx;
+  border-radius:3%;
+  border:3rpx solid skyblue;
+}

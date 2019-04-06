@@ -1,0 +1,39 @@
+/* pages/index2/index2.wxss*/ 
+.avatar{
+  display: block;
+  width: 180rpx;
+  height: 180rpx;
+  margin: 40rpx auto;
+}
+.user{
+  display: inline-block;
+  width: 100%;
+  padding: 0 240rpx;
+}
+.avatar > open-data{
+  display: block;
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  }
+  .pro{
+    display: block;
+    width:80%;
+    height:30rpx;
+    border: 3rpx solid deepskyblue;
+    margin:20rpx auto;
+    overflow: hidden;
+    border-radius:15rpx
+  }
+  .progress{
+    width: 60%;
+    overflow: hidden;
+    background: deepskyblue;
+    
+  }
+  .date{
+    font-size: 30rpx;
+    margin-top: 45rpx;
+    margin-left: 35rpx;
+  }

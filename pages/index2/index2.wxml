@@ -1,0 +1,57 @@
+<view class="avatar">
+<open-data   id="head" type="userAvatarUrl" ></open-data>
+</view>
+<block>   
+<open-data type="userNickName" class="user" open-gid="xxxxxx"></open-data>
+ </block>
+ <view class="pro">
+
+  <input class="progress" type="progress" style="width:{{width}}"></input>
+ </view>
+ <view class="date" bindtap='date' >
+  现在时间：<text style='color:deepskyblue'>{{dateTime}}</text>
+  <br/>
+  <view>
+    今年已经过去了<text style='color:deepskyblue;font-size:45rpx'>{{width}}</text>! {{yerWid}}
+    <view>
+    本月已经过去了<text style='color:deepskyblue;font-size:45rpx'>{{monPro}}</text>! {{monWid}}
+    </view>
+    <view>
+      今天已经过去了<text style='color:deepskyblue;font-size:45rpx'>{{dayPro}}</text>! {{dayWid}}
+    </view>
+  </view>
+ </view>
+
+ <view  class="section">
+ <picker
+    mode="date"
+    value="2019-09-01"
+    start="2019-01-01"
+    end="2030-12-01"
+    bindchange="bindDateChange"
+  >
+ <view style='margin-top:30rpx' style='width:80%;margin:25rpx auto'>
+  <view wx:if="{{date}}">
+    <button type='primary' >修改日常提醒</button>
+  </view>
+      <view wx:else>
+      <button type='primary'>添加日常提醒</button>
+      </view>
+ </view>
+  </picker>
+  <view wx:if="{{date}}" style="text-align:center">
+    你的提醒日期:{{date}}
+    <view>
+    仅剩{{d}}天
+    </view>
+    <view wx:if="{{mark}}">
+      提醒备注 :{{mark}}
+    </view>
+  </view>
+  <view wx:else="{{mark!=true}}">
+  您还没有添加提醒,
+    赶快去用户中心添加一个提醒吧!
+  </view>
+ </view>
+
+

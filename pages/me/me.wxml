@@ -1,0 +1,23 @@
+<!--pages/me/me.wxml-->
+<text>
+添加/修改备注:
+</text>
+<input type='text' placeholder='提醒备注' bindinput='mark' value="{{mark}}"></input>
+<view wx:if="{{mark}}">
+<button type='primary' value='添加' bindtap='setLoc'>修改</button>
+<view style="margin-left:50rpx">提醒备注: {{mark}} </view> 
+</view>
+<view wx:else="{{mark!=true}}">
+<button type='primary' value='添加' bindtap='setLoc'>添加</button>
+</view>
+<view wx-if="{{date}}" style="margin-left:50rpx">
+  <view>
+      提醒时间:{{date}}
+  </view> 
+  <view>
+  距离提醒日仅剩 <text  style='color:deepskyblue;font-size:80rpx;padding-left:0'>{{d}}</text>  天
+  </view>
+</view>
+<view wx:else="{{date!=true}}">
+  还没有添加提醒时间,赶快去首页去添加个提醒吧!
+</view>

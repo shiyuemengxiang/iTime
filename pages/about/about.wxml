@@ -1,0 +1,24 @@
+<!--pages/about/about.wxml-->
+<view class="title"><block>BUG反馈与意见</block></view>
+<view class="text">
+   <block> 亲爱的用户,您好如果对本程序如有任何意见和功能反馈请联系开发者!</block>
+   <view><block> Author:十月梦想</block></view>
+   <view>
+   <block> GitHub:https://github.com/shiyuemengxiang</block>
+   </view>
+   <view>
+   <block> E-mail:24920@163.com</block>
+   </view>
+   <view>
+    <block> 网站: https://cncat.cn</block>
+   </view>
+   <view>
+    <button open-type="contact" type="primary" style="width:80%;margin:20rpx auto;" bindcontact="handleContact">联系客服</button>
+   </view>
+   <view>
+      <block> 如有问题可以通过任意方式联系开发者均可</block>
+   </view>
+   <view>
+      <block> 本程序没有任何后台绝不会收集用户任何信息!</block>
+   </view>
+</view>
